@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.com">
+
+<div th:replace="fragments/headtags.html :: headtags">
+</div>
+<body class="page-template-default page page-id-11 page-parent theme-gardena bt_bb_plugin_active bt_bb_fe_preview_toggle woocommerce-no-js btHeadingWeight_bold btMenuWeight_default btButtonWeight_bolder btHasAltLogo btMenuRightEnabled btStickyEnabled btHideHeadline btLightSkin btBelowMenu btNoDashInSidebar noBodyPreloader btSoftRoundedButtons btTransparentLightHeader btNoSidebar ">
+<div class="btPageWrap" id="top">
+
+    <div th:replace="fragments/header.html :: header">
+
+    </div>
+    <div class="btContentWrap btClear">
+        <div class="btContentHolder">
+
+            <div class="btContent">
+                <div class="bt_bb_wrapper">
+                    <div th:replace="fragments/nav_crumb.html :: nav_crumb"></div>
+                    <div th:replace="about/contact/frag_details.html :: frag_contact_details"></div>
+                </div>
+
+                <div th:replace="fragments/footer.html :: footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- /pageWrap -->
+</body>
+
+</html>

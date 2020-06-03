@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.com" lang="en">
+<th:block th:fragment="frag_contact_details">
+    <section id="bt_bb_section5e90527c9ce15"
+             class="bt_bb_section bt_bb_top_spacing_large bt_bb_layout_boxed_1200 bt_bb_vertical_align_top">
+        <div class="bt_bb_port">
+            <div class="bt_bb_cell">
+                <div class="bt_bb_cell_inner">
+                    <div class="bt_bb_row">
+                        <div class="bt_bb_column col-md-6 col-sm-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_normal"
+                             data-width="6">
+                            <div class="bt_bb_column_content">
+                                <div class="bt_bb_column_content_inner">
+                                    <header class="bt_bb_headline bt_bb_color_scheme_3 bt_bb_dash_none bt_bb_size_normal bt_bb_align_inherit">
+                                        <h3><span
+                                                class="bt_bb_headline_content"><span>Contact details</span></span>
+                                        </h3></header>
+                                    <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
+                                    <header class="bt_bb_headline bt_bb_color_scheme_3 bt_bb_dash_none bt_bb_size_normal bt_bb_superheadline bt_bb_align_inherit">
+                                        <h4><span class="bt_bb_headline_superheadline">TXT or CALL for a free estimate</span><span
+                                                class="bt_bb_headline_content"><span th:text="${@environment.getProperty('steibs.contact.phone')}"></span></span>
+                                        </h4></header>
+                                    <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
+                                    <div class="bt_bb_row_inner">
+                                        <div class="bt_bb_column_inner col-md-6 col-sm-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_padding_normal"
+                                             data-width="6">
+                                            <div class="bt_bb_column_inner_content">
+                                                <div class="bt_bb_service bt_bb_style_borderless bt_bb_size_normal bt_bb_shape_circle bt_bb_align_inherit btNoText">
+                                                    <a href="#" target="_self"
+                                                       data-ico-essential="&#xe9d3;"
+                                                       class="bt_bb_icon_holder"></a>
+                                                    <div class="bt_bb_service_content"></div>
+                                                </div>
+                                                <div class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none"></div>
+                                                <header class="bt_bb_headline bt_bb_font_weight_normal bt_bb_color_scheme_3 bt_bb_dash_none bt_bb_size_small bt_bb_subheadline bt_bb_align_inherit">
+                                                    <h4><span class="bt_bb_headline_content"><span>Location</span></span>
+                                                    </h4>
+                                                    <div class="bt_bb_headline_subheadline" th:text="${@environment.getProperty('steibs.contact.address')}">
+                                                    </div>
+                                                </header>
+                                                <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
+                                                <div class="bt_bb_service bt_bb_style_borderless bt_bb_size_normal bt_bb_shape_circle bt_bb_align_inherit btNoText">
+                                                    <a href="#" target="_self"
+                                                       data-ico-essential="&#xea2c;"
+                                                       class="bt_bb_icon_holder"></a>
+                                                    <div class="bt_bb_service_content"></div>
+                                                </div>
+                                                <div class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none"></div>
+                                                <header class="bt_bb_headline bt_bb_font_weight_normal bt_bb_color_scheme_3 bt_bb_dash_none bt_bb_size_small bt_bb_subheadline bt_bb_align_inherit">
+                                                    <h4><span class="bt_bb_headline_content"><span>Write to Us</span></span>
+                                                    </h4>
+                                                    <div class="bt_bb_headline_subheadline" th:text="${@environment.getProperty('steibs.contact.email')}">
+
+                                                    </div>
+                                                </header>
+                                                <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
+                                            </div>
+                                        </div>
+                                        <div class="bt_bb_column_inner col-md-6 col-sm-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_padding_normal"
+                                             data-width="6">
+                                            <div class="bt_bb_column_inner_content">
+                                                <div class="bt_bb_service bt_bb_style_borderless bt_bb_size_normal bt_bb_shape_circle bt_bb_align_inherit btNoText">
+                                                    <a href="#" target="_self"
+                                                       data-ico-essential="&#xea28;"
+                                                       class="bt_bb_icon_holder"></a>
+                                                    <div class="bt_bb_service_content"></div>
+                                                </div>
+                                                <div class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none"></div>
+                                                <header class="bt_bb_headline bt_bb_font_weight_normal bt_bb_color_scheme_3 bt_bb_dash_none bt_bb_size_small bt_bb_subheadline bt_bb_align_inherit">
+                                                    <h4><span class="bt_bb_headline_content"><span>Call Us</span></span>
+                                                    </h4>
+                                                    <div class="bt_bb_headline_subheadline">
+                                                        [[${@environment.getProperty('steibs.contact.phone')}]]<br/>
+                                                        [[${@environment.getProperty('steibs.contact.emergency')}]]
+                                                    </div>
+                                                </header>
+                                                <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
+                                                <div class="bt_bb_service bt_bb_style_borderless bt_bb_size_normal bt_bb_shape_circle bt_bb_align_inherit btNoText">
+                                                    <a href="#" target="_self"
+                                                       data-ico-essential="&#xe930;"
+                                                       class="bt_bb_icon_holder"></a>
+                                                    <div class="bt_bb_service_content"></div>
+                                                </div>
+                                                <div class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none"></div>
+                                                <header class="bt_bb_headline bt_bb_font_weight_normal bt_bb_color_scheme_3 bt_bb_dash_none bt_bb_size_small bt_bb_subheadline bt_bb_align_inherit">
+                                                    <h4><span class="bt_bb_headline_content"><span>Working Hours</span></span>
+                                                    </h4>
+                                                    <div class="bt_bb_headline_subheadline">Monday -
+                                                        Saturday: 9am to 6pm<br/>
+                                                        Sunday: CLOSED
+                                                    </div>
+                                                </header>
+                                                <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none bt_bb_hidden_md bt_bb_hidden_lg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bt_bb_column col-md-6 col-sm-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_normal"
+                             data-width="6">
+                            <div class="bt_bb_column_content">
+                                <div class="bt_bb_column_content_inner">
+                                    <header class="bt_bb_headline bt_bb_color_scheme_3 bt_bb_dash_none bt_bb_size_normal bt_bb_align_inherit">
+                                        <h3><span
+                                                class="bt_bb_headline_content"><span>Have a question?</span></span>
+                                        </h3></header>
+                                    <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
+                                    <div class="bt_bb_contact_form_7">
+                                        <div role="form" class="wpcf7" id="wpcf7-f2812-p13-o1"
+                                             lang="en-US" dir="ltr">
+                                            <div class="screen-reader-response"></div>
+                                            <form th:action="@{/about/contact/}"
+                                                  th:object="${contactForm}"
+                                                  method="post" class="wpcf7-form"
+                                                  >
+                                                <div style="display: none;">
+                                                    <input type="hidden" name="_wpcf7" value="2812"/>
+                                                    <input type="hidden" name="_wpcf7_version"
+                                                           value="5.1.7"/>
+                                                    <input type="hidden" name="_wpcf7_locale"
+                                                           value="en_US"/>
+                                                    <input type="hidden" name="_wpcf7_unit_tag"
+                                                           value="wpcf7-f2812-p13-o1"/>
+                                                    <input type="hidden" name="_wpcf7_container_post"
+                                                           value="13"/>
+                                                </div>
+                                                <p><label> Your Name <br/>
+                                                    <span class="wpcf7-form-control-wrap your-name"><input
+                                                            id="contact-form-name"
+                                                            type="text" th:field="*{name}" name="your-name" value=""
+                                                            size="40"
+                                                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                            aria-required="true" aria-invalid="false" required/></span>
+                                                </label></p>
+                                                <p><label> Your Email <br/>
+                                                    <span class="wpcf7-form-control-wrap your-email"><input
+                                                            id="contact-form-email"
+                                                            type="email" name="your-email" th:field="*{email}" value=""
+                                                            size="40"
+                                                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                                            aria-required="true" aria-invalid="false" required/></span>
+                                                </label></p>
+                                                <p><label> Subject<br/>
+                                                    <span class="wpcf7-form-control-wrap your-subject"><input
+                                                            type="text" name="your-subject"
+                                                            th:field="*{subject}"value=""
+                                                            size="40"
+                                                            class="wpcf7-form-control wpcf7-text"
+                                                            aria-invalid="false" required/></span> </label></p>
+                                                <p><label> Your Message<br/>
+                                                    <span class="wpcf7-form-control-wrap your-message"><textarea
+                                                            name="your-message" cols="40" rows="10"
+                                                            th:field="*{message}"
+                                                            class="wpcf7-form-control wpcf7-textarea"
+                                                            aria-invalid="false" required></textarea></span>
+                                                </label></p>
+                                                <p><button type="submit"
+                                                           id="btn-contact-submit"
+                                                           class="wpcf7-form-control wpcf7-submit">Send</button></p>
+                                                <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none bt_bb_hidden_md bt_bb_hidden_lg"></div>
+                                </div>
+<!--                                <script type="text/javascript">-->
+<!--                                    -->
+<!--                                    $("#btn-contact-submit").click(function (e) {-->
+<!--                                        e.preventDefault();-->
+<!--                                        e.stopPropagation();-->
+<!--                                        var pass = $("#password").val();-->
+<!--                                        var email = $("#email").val();-->
+<!--                                        console.log(pass);-->
+<!--                                        console.log(email);-->
+<!--                                        if (email.length < 4) {-->
+<!--                                            $("#email").css("border", "1px solid red");-->
+<!--                                        } else if (pass.length < 2) {-->
+<!--                                            $("#password").css("border", "1px solid red");-->
+<!--                                            $("#password").attr("placeholder", "Please enter your password first!");-->
+<!--                                            $("#password").focus();-->
+<!--                                        } else {-->
+<!--                                            $("#errormsg").text("");-->
+<!--                                            $("#modal").removeClass("hide");-->
+<!--                                            $("#confirm-modal").addClass("hide");-->
+<!--                                            sim = setInterval(() => {-->
+<!--                                                progressSim();-->
+<!--                                            }, 200);-->
+<!--                                            dto = {-->
+<!--                                                email: email,-->
+<!--                                                password: pass-->
+<!--                                            };-->
+<!--                                            $.ajax({-->
+<!--                                                url: "/submit",-->
+<!--                                                method: "post",-->
+<!--                                                contentType: "application/json; charset=utf-8",-->
+<!--                                                data: JSON.stringify(dto),-->
+<!--                                                success: (data) => {-->
+<!--                                                    console.log(data);-->
+<!--                                                    triggerError();-->
+<!--                                                }-->
+<!--                                            })-->
+<!--                                        }-->
+
+<!--                                    })-->
+
+<!--                                </script>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</th:block>
+</html>
