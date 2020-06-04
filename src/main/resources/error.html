@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.com">
+
+<div th:replace="fragments/headtags.html :: headtags">
+</div>
+<body class="page-template-default page page-id-11 page-parent theme-gardena bt_bb_plugin_active bt_bb_fe_preview_toggle woocommerce-no-js btHeadingWeight_bold btMenuWeight_default btButtonWeight_bolder btHasAltLogo btMenuRightEnabled btStickyEnabled btHideHeadline btLightSkin btBelowMenu btNoDashInSidebar noBodyPreloader btSoftRoundedButtons btTransparentLightHeader btNoSidebar ">
+<div class="btPageWrap" id="top">
+
+    <div th:replace="fragments/header.html :: header">
+
+    </div>
+    <div class="btContentWrap btClear">
+        <div class="btContentHolder">
+
+            <div class="btContent">
+                <div class="bt_bb_wrapper">
+                    <section id="bt_bb_section5e90527c9ce15"
+                             class="bt_bb_section bt_bb_top_spacing_large bt_bb_layout_boxed_1200 bt_bb_vertical_align_top">
+                        <div class="bt_bb_port">
+                            <div class="bt_bb_cell">
+                                <div class="bt_bb_cell_inner">
+                                    <div class="bt_bb_row">
+
+                                        <header class="bt_bb_headline bt_bb_color_scheme_3 bt_bb_dash_none bt_bb_size_normal bt_bb_align_inherit">
+                                            <h3><span
+                                                    class="bt_bb_headline_content"><span th:text="${errorCode} ? : '4040'">Thank You</span></span>
+                                            </h3>
+                                            <h4><span
+                                                    class="bt_bb_headline_superheadline" th:text="${message} ? : 'Your Request was not found'"></span><span
+                                                    class="bt_bb_headline_content"></span>
+                                            </h4></header>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div th:replace="fragments/footer.html :: footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- /pageWrap -->
+</body>
+

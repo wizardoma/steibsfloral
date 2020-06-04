@@ -3,14 +3,12 @@ package com.techbek.steibsfloral.controllers;
 import com.techbek.steibsfloral.config.page.AboutPageProperties;
 import com.techbek.steibsfloral.config.page.IPageProperties;
 import com.techbek.steibsfloral.config.page.ModelPageAttributes;
-import com.techbek.steibsfloral.config.page.service.EmailSender;
+import com.techbek.steibsfloral.service.EmailSender;
 import com.techbek.steibsfloral.domain.ContactDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -27,6 +25,7 @@ public class AboutController {
     @GetMapping("")
     public String getAboutPage(Model model){
         ModelPageAttributes.addAttributes(model, pageProperties);
+        model.addAttribute("contactForm", new ContactDto());
         return "about/index";
     }
 
