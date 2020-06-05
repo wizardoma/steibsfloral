@@ -5,22 +5,30 @@
 <div th:replace="fragments/headtags.html :: headtags">
 </div>
 <body class="page-template-default page page-id-11 page-parent theme-gardena bt_bb_plugin_active bt_bb_fe_preview_toggle woocommerce-no-js btHeadingWeight_bold btMenuWeight_default btButtonWeight_bolder btHasAltLogo btMenuRightEnabled btStickyEnabled btHideHeadline btLightSkin btBelowMenu btNoDashInSidebar noBodyPreloader btSoftRoundedButtons btTransparentLightHeader btNoSidebar ">
-<div class="btPageWrap" id="top">
 
-    <div th:replace="fragments/header.html :: header">
-
-    </div>
     <div class="btContentWrap btClear">
         <div class="btContentHolder">
 
             <div class="btContent">
                 <div class="bt_bb_wrapper">
+                    <div th:if="${success}"> Submitted successfully </div>
+                    <div th:if="${failure}"> Submission Failed </div>
                     <div>
-                        <form th:action="@{/blog}" method="post" ></form>
+                        <form th:action="@{/blog}" method="post" th:object="${blog}" >
+                            <input type="text" th:field="*{title}" required/>
+                            <input type="text" th:field="*{content}" />
+                            <select th:field="*{category}">
+                                <option th:each="cat in ${category}" value="${cat}" th:text="${cat}"> </option>
+                            </select>
+                            <input type="text" th:field="*{imageUrl}" />
+
+                            <button type="submit" >Submit</button>
+                        </form>
                     </div>
 
                 </div>
-
+                <br>
+                <br>
                 <div th:replace="fragments/footer.html :: footer">
                 </div>
             </div>

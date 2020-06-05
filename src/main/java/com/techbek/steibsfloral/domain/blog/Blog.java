@@ -13,11 +13,12 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "blogs")
 public class Blog extends AbstractEntity {
+
     private String title;
     private String content;
     private LocalDate publishDate= LocalDate.now();
     @Enumerated(value = EnumType.STRING)
     private BlogCategory category;
     private String imageUrl;
-    private String author;
+    private String author = "SteibsFloral";
 }

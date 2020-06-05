@@ -3,14 +3,11 @@ package com.techbek.steibsfloral.controllers;
 import com.techbek.steibsfloral.config.page.BlogPageProperties;
 import com.techbek.steibsfloral.config.page.ModelPageAttributes;
 import com.techbek.steibsfloral.domain.blog.BlogRepository;
+import com.techbek.steibsfloral.domain.dto.BlogSubmitDto;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("blog")
@@ -33,9 +30,15 @@ public class BlogController {
         return "blog/single";
     }
 
-    @PostMapping("")
+    @PostMapping("post")
     public void postBlog(){
+    //c
+    }
 
+    @GetMapping("post")
+    public String getPostPage(Model model){
+        model.addAttribute("blog", new BlogSubmitDto());
+        return "blog/post";
     }
 
 }

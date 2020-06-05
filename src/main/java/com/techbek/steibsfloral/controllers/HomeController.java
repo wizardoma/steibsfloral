@@ -18,4 +18,5 @@ public class HomeController {
         ModelPageAttributes.addAttributes(model, pageProperties);
         return "index";
     }
+
 }

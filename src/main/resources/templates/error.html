@@ -24,10 +24,10 @@
 
                                         <header class="bt_bb_headline bt_bb_color_scheme_3 bt_bb_dash_none bt_bb_size_normal bt_bb_align_inherit">
                                             <h3><span
-                                                    class="bt_bb_headline_content"><span th:text="${errorCode} ? : '4040'">Thank You</span></span>
+                                                    class="bt_bb_headline_content"><span th:text="${errorCode} ?: '404'"></span></span>
                                             </h3>
                                             <h4><span
-                                                    class="bt_bb_headline_superheadline" th:text="${message} ? : 'Your Request was not found'"></span><span
+                                                    class="bt_bb_headline_superheadline" th:text="${message} ?: 'Your Request was not found'">Your Request was Not Found</span><span
                                                     class="bt_bb_headline_content"></span>
                                             </h4></header>
                                     </div>
